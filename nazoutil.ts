@@ -76,7 +76,7 @@ const contract = new Contract(contract_addr, abi, solver);
         if (!solved.status) {
           console.log("submit error", solved)
         }
-        console.log(`[✅] Challenge ${challenge_id} solved, got ${score} ${symbol}\nTotal ${solvedCount + 1} solved)`)
+        console.log(`[✅] Challenge ${challenge_id} solved, got ${score} ${symbol}\nTotal ${solvedCount + 1} solved)\nTransaction Hash: ${tx.hash}`)
       } catch (error) {
         console.log("submit error", error?.revert)
       } finally {
